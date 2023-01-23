@@ -1,0 +1,119 @@
+<body>
+  <div>
+    <div id="a">
+    <div id="b"></div>
+    <div id="c"></div>
+    <div id="d"></div>
+    </div></div>
+</body>
+<style>
+ * {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background: #54C144
+}
+
+div {
+	width: 90%;
+	height: 86.7%;
+	background: #000;
+	position: relative;
+}
+
+#a {
+	height: 40;
+	width: 80;
+	background: #C74E4E;
+	position: absolute;
+	top: 40;
+	left: 40;
+}
+
+#a::before {
+	content: "";
+	height: 40;
+	width: 80;
+	background: #C74E4E;
+	position: absolute;
+	left: 120;
+}
+
+#a::after {
+	content: "";
+	height: 40;
+	width: 200;
+	background: #C74E4E;
+	position: absolute;
+	top: 80;
+}
+
+#b {
+	background: #C74E4E;
+	left: 240;
+	height: 180;
+	width: 40
+}
+
+#c {
+	background: #54C144;
+	height: 10;
+	width: 40;
+	top: -10
+}
+
+#c::before {
+	content: "";
+	position: absolute;
+	background: #54C144;
+	height: 10;
+	width: 40;
+	top: -30
+}
+
+#c::after {
+	content: "";
+	position: absolute;
+	background: #54C144;
+	height: 10;
+	width: 40;
+	top: -15;
+	left: 10
+}
+
+#d {
+	width: 10;
+	height: 10;
+	background: #fff;
+	top: -35;
+	left: 60
+}
+
+#d::before {
+	position: absolute;
+	content: '';
+	width: 10;
+	height: 10;
+	background: #fff;
+	left: 20
+}
+
+#d::after {
+	position: absolute;
+	content: '';
+	width: 20;
+	height: 20;
+	background: #54C144;
+	top: -5;
+	left: -50
+
+/*MINIFIED */
+<body><div>
+  <div id="a"><div id="b"></div> <div id="c"></div><div id="d"></div></div>
+</div></body>
+<style>*{margin:0;padding:0 }body{display:grid;place-items:center;height:100vh;background:#54C144 }div{width:90%;height:86.7%;background: #000;position:relative;}#a{height:40;width:80;background:#C74E4E;position:absolute;top:40;left:40;}#a::before{content:"";height:40;width:80;background:#C74E4E;position:absolute;left:120;}#a::after{content:"";height:40;width:200;background:#C74E4E;position:absolute;top:80;}#b{background:#C74E4E;left:240;height:180;width:40}#c{background:#54C144;height:10;width:40;top:-10 }#c::before{content:"";position:absolute;background:#54C144;height:10;width:40;top:-30 }#c::after{content:"";position:absolute;background:#54C144;height:10;width:40;top:-15;left:10 }#d{width: 10;height:10;background: #fff;top:-35;left: 60 }#d::before{position: absolute;content:'';width: 10;height:10;background:#fff;left: 20 }#d::after{position: absolute;content:'';width:20;height:20;background:#54C144;top:-5;left:-50
