@@ -1,0 +1,48 @@
+<div id="a">
+</div>
+<div id="b"></div>
+<style>
+  *{
+    margin:0;
+    box-sizing:border-box;
+    position:relative;
+  }
+  body{
+    background:#071945;
+    height:100vh
+  }
+  #a{
+    width:12.6%;
+    height:10;
+    background: #B069F7;
+    left:10%;
+    top:13.3%;
+  }
+  #a,#a::after{
+    box-shadow: 90px 0 #B069F7,180px 0 #B069F7,270px 0 #B069F7,0 50px #F8DA37, 180px 50px #F8DA37,270px 50px #F8DA37;
+  }
+  #a::before,#a::after{
+    position:absolute;
+    content:'';
+    height:10;
+    width:10;
+    background:#B069F7;
+  }
+  #a::before{
+    top:10;
+    left:-10;
+    box-shadow: 90px 0 #B069F7,180px 0 #B069F7,270px 0 #B069F7,0 50px #F8DA37, 180px 50px #F8DA37,270px 50px #F8DA37, 165px 160px #2CE1EA, 165px 190px #2CE1EA,165px 220px #2CE1EA,165px 225px #2CE1EA;
+  }
+  #a::after{
+    top:10;
+    right:-10;
+  }
+  #b{
+    height:46;
+    width:46;
+    background: #2CE1EA;
+    transform: rotateZ(45deg);
+    top:calc(100% - 23px);
+    left: calc(50% - 23px);
+  }
+</style>
